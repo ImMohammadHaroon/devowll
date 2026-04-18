@@ -116,7 +116,7 @@ export default function Home() {
         path="/"
       />
       <section className="relative overflow-hidden">
-        <LampContainer className="min-h-[92vh] rounded-none bg-slate-950">
+        <LampContainer className="min-h-[92vh] rounded-none bg-slate-900">
           <div className="mx-auto flex max-w-4xl flex-col items-center px-5 text-center">
             <p className="rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-cyan-200">
               Devowll

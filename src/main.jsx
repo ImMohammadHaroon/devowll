@@ -5,6 +5,8 @@ import App from './App';
 import convex from './lib/convex';
 import './styles/globals.css';
 
+document.documentElement.classList.add('dark');
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ConvexProvider client={convex}>

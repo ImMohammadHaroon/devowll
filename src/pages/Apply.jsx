@@ -585,7 +585,7 @@ export default function Apply() {
                         </button>
                       </div>
                     </div>
-                    <p className="mt-3 text-xs leading-5 text-slate-700">After payment, upload the transaction receipt below. We'll verify and contact you on {form.phoneNumber || 'your phone number'} within 24 hours.</p>
+                    <p className="mt-3 text-xs leading-5 text-slate-700">After payment, upload the transaction receipt below. This payment will automatically be returned to your account within 48 hours. We'll verify and contact you on {form.phoneNumber || 'your phone number'} within 24 hours.</p>
                   </div>
 
                   <div>
