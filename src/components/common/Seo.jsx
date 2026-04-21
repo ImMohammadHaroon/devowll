@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-const siteOrigin = import.meta.env.VITE_SITE_URL || 'https://devowll.com';
+const siteOrigin = import.meta.env.VITE_SITE_URL || 'https://devowll.tech';
 const defaultKeywords = 'Devowll, remote internship, remote internship program, tech internship, online internship';
 
 function ensureMeta(selector, attributeName, attributeValue, content) {

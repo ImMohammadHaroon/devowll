@@ -11,7 +11,7 @@ const quickLinks = [
 ];
 
 const socialLinks = [
-  { label: 'LinkedIn', href: 'https://www.linkedin.com', icon: Linkedin },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/company/113160345', icon: Linkedin },
   { label: 'Instagram', href: 'https://www.instagram.com', icon: Instagram },
   { label: 'WhatsApp', href: 'https://www.whatsapp.com', icon: MessageCircle },
 ];

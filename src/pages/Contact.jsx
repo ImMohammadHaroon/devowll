@@ -20,9 +20,9 @@ const emailjsConfig = {
 };
 
 const contactCards = [
-  { icon: Mail, label: 'Email', value: 'info@devowll.com', color: 'text-primary bg-violet-50' },
+  { icon: Mail, label: 'Email', value: 'admin@devowll.tech', color: 'text-primary bg-violet-50' },
   { icon: MessageCircle, label: 'WhatsApp', value: '+92 XXX XXXXXXX', color: 'text-emerald-600 bg-emerald-50' },
-  { icon: Linkedin, label: 'LinkedIn', value: 'linkedin.com/company/devowll', color: 'text-blue-600 bg-blue-50' },
+  { icon: Linkedin, label: 'LinkedIn', value: 'linkedin.com/company/113160345', color: 'text-blue-600 bg-blue-50' },
   { icon: MapPin, label: 'Location', value: 'Lahore, Pakistan', color: 'text-red-600 bg-red-50' },
 ];
 

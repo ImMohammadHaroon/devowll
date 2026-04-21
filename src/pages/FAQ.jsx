@@ -42,7 +42,7 @@ const faqs = [
   },
   {
     question: 'How do I verify a certificate?',
-    answer: 'Visit devowll.com/verify-certificate and enter your unique certificate ID.',
+    answer: 'Visit devowll.tech/verify-certificate and enter your unique certificate ID.',
   },
   {
     question: 'Can I apply for multiple tracks?',

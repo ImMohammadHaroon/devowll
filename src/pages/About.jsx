@@ -215,7 +215,7 @@ export default function About() {
                 <p className={`${member.featured ? 'mt-6 text-2xl' : 'mt-5 text-xl'} font-bold text-dark`}>{member.name}</p>
                 <p className="mt-2 text-sm text-muted">{member.role}</p>
                 <a
-                  href="https://www.linkedin.com"
+                  href="https://www.linkedin.com/company/113160345"
                   target="_blank"
                   rel="noreferrer"
                   aria-label={`${member.name} LinkedIn`}
