@@ -100,15 +100,16 @@ export default function Services() {
   return (
     <>
       <Seo
-        title="Our Internship Services"
-        description="Explore Devowll internship services including web development, e-commerce, UI/UX design, digital marketing, React.js advanced, and WordPress development."
+        title="Remote Internship Services"
+        description="Explore Devowll remote internship services including web development, e-commerce, UI/UX design, digital marketing, React.js advanced, and WordPress development."
         path="/services"
+        keywords="Devowll, remote internship, remote internship services, web development internship, design internship, marketing internship"
       />
       <Section className="bg-slate-50">
         <div className="container-page py-20 sm:py-24">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-primary">What We Offer</p>
-            <h1 className="mt-4 text-4xl font-bold tracking-tight text-dark sm:text-5xl">Our Internship Services</h1>
+            <h1 className="mt-4 text-4xl font-bold tracking-tight text-dark sm:text-5xl">Remote Internship Services</h1>
             <p className="mt-5 max-w-2xl text-lg leading-8 text-muted">Real programs. Real projects. Real experience.</p>
           </div>
         </div>

@@ -78,9 +78,10 @@ export default function FAQ() {
   return (
     <>
       <Seo
-        title="Frequently Asked Questions"
-        description="Find answers to common questions about Devowll internship programs, certificates, schedules, and verification."
+        title="Remote Internship FAQ"
+        description="Find answers to common questions about Devowll remote internship programs, certificates, schedules, and verification."
         path="/faq"
+        keywords="Devowll, remote internship, internship FAQ, certificate verification, remote internship questions"
       />
       <Section className="bg-slate-50">
         <div className="container-page py-20 sm:py-24">

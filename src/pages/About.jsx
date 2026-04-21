@@ -83,8 +83,9 @@ export default function About() {
     <>
       <Seo
         title="About Devowll"
-        description="Learn about Devowll's mission, vision, core values, and the team building practical tech internships."
+        description="Learn about Devowll's mission, vision, core values, and the team building remote internship programs."
         path="/about"
+        keywords="Devowll, remote internship, about Devowll, internship platform, tech training"
       />
       <Section className="bg-slate-50">
         <div className="container-page py-20 sm:py-24">

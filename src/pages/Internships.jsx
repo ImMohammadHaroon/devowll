@@ -167,16 +167,17 @@ export default function Internships() {
   return (
     <>
       <Seo
-        title="Internship Programs"
-        description="Join Devowll internship programs, filter tracks, and learn through real tasks, mentorship, and certificate-backed completion."
+        title="Remote Internship Programs"
+        description="Explore Devowll remote internship programs, compare tracks, and learn through real tasks, mentorship, and certificate-backed completion."
         path="/internships"
+        keywords="Devowll, remote internship, remote internship programs, online internship, internship tracks"
       />
       <Section className="bg-slate-50">
         <div className="container-page py-20 sm:py-24">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-primary">Internship Programs</p>
-            <h1 className="mt-4 text-4xl font-bold tracking-tight text-dark sm:text-5xl">Internship Programs</h1>
-            <p className="mt-5 text-lg leading-8 text-muted">Join a program, complete real tasks, earn your certificate.</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-primary">Remote Internship Programs</p>
+            <h1 className="mt-4 text-4xl font-bold tracking-tight text-dark sm:text-5xl">Remote Internship Programs</h1>
+            <p className="mt-5 text-lg leading-8 text-muted">Join a remote program, complete real tasks, and earn your certificate.</p>
           </div>
         </div>
       </Section>

@@ -180,8 +180,9 @@ export default function Contact() {
     <>
       <Seo
         title="Contact Devowll"
-        description="Contact Devowll for internship questions, partnerships, and general inquiries."
+        description="Contact Devowll for remote internship questions, partnerships, and general inquiries."
         path="/contact"
+        keywords="Devowll, remote internship, contact Devowll, internship support, partnerships"
       />
       <Section className="bg-slate-50">
         <div className="container-page py-20 sm:py-24">

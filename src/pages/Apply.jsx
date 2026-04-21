@@ -289,14 +289,15 @@ export default function Apply() {
   return (
     <>
       <Seo
-        title="Apply for an Internship"
-        description="Apply for a Devowll internship by completing the full application form and choosing your preferred track."
+        title="Apply for a Remote Internship"
+        description="Apply for a Devowll remote internship by completing the full application form and choosing your preferred track."
         path="/apply"
+        keywords="Devowll, remote internship, apply for remote internship, internship application, online internship"
       />
       <Section className="bg-slate-50">
         <div className="container-page py-20 sm:py-24">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-primary">Apply for an Internship</p>
-          <h1 className="mt-4 text-4xl font-bold tracking-tight text-dark sm:text-5xl">Apply for an Internship</h1>
+          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-primary">Apply for a Remote Internship</p>
+          <h1 className="mt-4 text-4xl font-bold tracking-tight text-dark sm:text-5xl">Apply for a Remote Internship</h1>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-muted">
             Complete the form and our team will review your application for the right Devowll internship track.
           </p>
@@ -533,59 +534,62 @@ export default function Apply() {
                     </div>
                   </div>
 
-                  <div className="rounded-3xl border-2 border-cyan-200 bg-cyan-50 p-6">
+                  <div className="rounded-3xl border-2 border-cyan-200 bg-cyan-50 p-6 text-[#0f172a]" style={{ backgroundColor: '#ecfeff' }}>
                     <div className="mb-4 flex items-center gap-2">
                       <div className="flex h-8 w-8 items-center justify-center rounded-full bg-cyan-600 text-white text-sm font-bold">₨</div>
                       <div>
-                        <p className="font-bold text-dark">Enrollment Fee Required</p>
-                        <p className="text-sm text-muted">Pay {paymentDetails.fee} using Easypaisa</p>
+                        <p className="font-bold text-[#0f172a]">Enrollment Fee Required</p>
+                        <p className="text-sm text-[#475569]">Pay {paymentDetails.fee} using Easypaisa</p>
                       </div>
                     </div>
-                    <div className="space-y-3 rounded-2xl bg-white p-4 text-sm">
-                      <div className="flex items-center justify-between">
+                    <div
+                      className="space-y-3 rounded-2xl p-4 text-sm text-[#0f172a] shadow-sm ring-1 ring-cyan-100"
+                      style={{ backgroundColor: '#ffffff' }}
+                    >
+                      <div className="flex items-center justify-between gap-4">
                         <div>
-                          <span className="text-slate-600">Account Number:</span>
-                          <p className="font-mono font-semibold text-dark">{paymentDetails.accountNumber}</p>
+                          <span className="text-[#475569]">Account Number:</span>
+                          <p className="font-mono font-semibold text-[#0f172a]">{paymentDetails.accountNumber}</p>
                         </div>
                         <button
                           type="button"
                           onClick={() => handleCopyToClipboard(paymentDetails.accountNumber, 'accountNumber')}
-                          className="ml-2 flex items-center gap-1 rounded-lg bg-slate-100 px-3 py-2 text-xs font-medium text-slate-700 transition-colors hover:bg-slate-200"
+                          className="ml-2 flex shrink-0 items-center gap-1 rounded-lg bg-slate-100 px-3 py-2 text-xs font-medium text-[#334155] transition-colors hover:bg-slate-200"
                         >
                           <Copy size={14} />
                           {copiedField === 'accountNumber' ? 'Copied!' : 'Copy'}
                         </button>
                       </div>
-                      <div className="flex items-center justify-between">
+                      <div className="flex items-center justify-between gap-4">
                         <div>
-                          <span className="text-slate-600">IBAN:</span>
-                          <p className="font-mono font-semibold text-dark">{paymentDetails.iban}</p>
+                          <span className="text-[#475569]">IBAN:</span>
+                          <p className="font-mono font-semibold text-[#0f172a]">{paymentDetails.iban}</p>
                         </div>
                         <button
                           type="button"
                           onClick={() => handleCopyToClipboard(paymentDetails.iban, 'iban')}
-                          className="ml-2 flex items-center gap-1 rounded-lg bg-slate-100 px-3 py-2 text-xs font-medium text-slate-700 transition-colors hover:bg-slate-200"
+                          className="ml-2 flex shrink-0 items-center gap-1 rounded-lg bg-slate-100 px-3 py-2 text-xs font-medium text-[#334155] transition-colors hover:bg-slate-200"
                         >
                           <Copy size={14} />
                           {copiedField === 'iban' ? 'Copied!' : 'Copy'}
                         </button>
                       </div>
-                      <div className="flex items-center justify-between">
+                      <div className="flex items-center justify-between gap-4">
                         <div>
-                          <span className="text-slate-600">Account Name:</span>
-                          <p className="font-semibold text-dark">{paymentDetails.accountName}</p>
+                          <span className="text-[#475569]">Account Name:</span>
+                          <p className="font-semibold text-[#0f172a]">{paymentDetails.accountName}</p>
                         </div>
                         <button
                           type="button"
                           onClick={() => handleCopyToClipboard(paymentDetails.accountName, 'accountName')}
-                          className="ml-2 flex items-center gap-1 rounded-lg bg-slate-100 px-3 py-2 text-xs font-medium text-slate-700 transition-colors hover:bg-slate-200"
+                          className="ml-2 flex shrink-0 items-center gap-1 rounded-lg bg-slate-100 px-3 py-2 text-xs font-medium text-[#334155] transition-colors hover:bg-slate-200"
                         >
                           <Copy size={14} />
                           {copiedField === 'accountName' ? 'Copied!' : 'Copy'}
                         </button>
                       </div>
                     </div>
-                    <p className="mt-3 text-xs leading-5 text-slate-700">After payment, upload the transaction receipt below. This payment will automatically be returned to your account within 48 hours. We'll verify and contact you on {form.phoneNumber || 'your phone number'} within 24 hours.</p>
+                    <p className="mt-3 text-xs leading-5 text-[#334155]">After payment, upload the transaction receipt below. This payment will automatically be returned to your account within 48 hours. We'll verify and contact you on {form.phoneNumber || 'your phone number'} within 24 hours.</p>
                   </div>
 
                   <div>

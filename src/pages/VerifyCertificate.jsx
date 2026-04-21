@@ -58,9 +58,10 @@ export default function VerifyCertificate() {
   return (
     <>
       <Seo
-        title="Verify Certificate"
-        description="Verify the authenticity of a Devowll certificate using a unique certificate ID."
+        title="Verify Devowll Certificate"
+        description="Verify the authenticity of a Devowll certificate from a remote internship program using a unique certificate ID."
         path="/verify-certificate"
+        keywords="Devowll, remote internship certificate, verify certificate, certificate ID, internship verification"
       />
       <Section className="bg-slate-50">
         <div className="container-page py-20 sm:py-24">

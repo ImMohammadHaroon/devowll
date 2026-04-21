@@ -111,9 +111,10 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="Home"
-        description="Devowll helps learners learn, build, and launch through internship programs, practical projects, and mentorship."
+        title="Devowll Remote Internship Programs"
+        description="Devowll helps learners find remote internship programs, build practical tech projects, and launch with mentorship and certification."
         path="/"
+        keywords="Devowll, remote internship, remote internship programs, tech internship, internship platform"
       />
       <section className="relative overflow-hidden">
         <LampContainer className="min-h-[92vh] rounded-none bg-slate-900">
