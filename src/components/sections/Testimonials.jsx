@@ -2,7 +2,7 @@ import Card from '../common/Card';
 
 const testimonials = [
   {
-    quote: 'Devowll helped me move from theory to real product work. The internship guidance made the transition easier.',
+    quote: 'Ghulabdev helped me move from theory to real product work. The internship guidance made the transition easier.',
     name: 'Aarav Mehta',
     role: 'Frontend Intern',
   },

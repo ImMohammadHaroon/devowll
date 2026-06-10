@@ -137,7 +137,7 @@ const timeline = [
   {
     week: 'Completion',
     title: 'Certificate Issued',
-    text: 'Complete the track and receive your official Devowll certificate.',
+    text: 'Complete the track and receive your official Ghulabdev certificate.',
   },
 ];
 
@@ -168,9 +168,9 @@ export default function Internships() {
     <>
       <Seo
         title="Remote Internship Programs"
-        description="Explore Devowll remote internship programs, compare tracks, and learn through real tasks, mentorship, and certificate-backed completion."
+        description="Explore Ghulabdev remote internship programs, compare tracks, and learn through real tasks, mentorship, and certificate-backed completion."
         path="/internships"
-        keywords="Devowll, remote internship, remote internship programs, online internship, internship tracks"
+        keywords="Ghulabdev, remote internship, remote internship programs, online internship, internship tracks"
       />
       <Section className="bg-slate-50">
         <div className="container-page py-20 sm:py-24">
@@ -302,7 +302,7 @@ export default function Internships() {
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-primary">Certificate Preview</p>
             <h2 className="mt-3 text-3xl font-bold text-dark sm:text-4xl">Your completion certificate.</h2>
             <p className="mt-4 text-lg leading-8 text-muted">
-              Every intern who completes the program receives an official Devowll certificate.
+              Every intern who completes the program receives an official Ghulabdev certificate.
             </p>
           </div>
 

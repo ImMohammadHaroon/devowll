@@ -22,11 +22,11 @@ export default function Footer() {
       <div className="container-page grid gap-10 py-14 md:grid-cols-3 md:gap-8">
         <div>
           <NavLink to="/" className="font-heading text-3xl font-bold tracking-tight text-white">
-            Devowll
+            Ghulabdev
           </NavLink>
           <p className="mt-2 text-sm font-medium text-violet-300">Learn. Build. Launch.</p>
           <p className="mt-4 max-w-md text-sm leading-6 text-slate-300">
-            Devowll is a tech education and internship platform helping learners build practical skills, complete real projects, and move forward with confidence.
+            Ghulabdev is a tech education and internship platform helping learners build practical skills, complete real projects, and move forward with confidence.
           </p>
         </div>
 
@@ -64,7 +64,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10 py-4 text-center text-sm text-slate-300">
-        © 2026 Devowll. All rights reserved.
+        © 2026 Ghulabdev. All rights reserved.
       </div>
     </footer>
   );

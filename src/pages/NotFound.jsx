@@ -4,7 +4,7 @@ import Button from '../components/common/Button';
 export default function NotFound() {
   return (
     <section className="bg-slate-50">
-      <Seo title="Page Not Found" description="The page you requested could not be found on the Devowll website." path="/404" />
+      <Seo title="Page Not Found" description="The page you requested could not be found on the Ghulabdev website." path="/404" />
       <div className="container-page flex min-h-[70vh] items-center justify-center py-20 text-center">
         <div className="max-w-xl">
           <p className="text-7xl font-bold tracking-tight text-primary sm:text-8xl">404</p>

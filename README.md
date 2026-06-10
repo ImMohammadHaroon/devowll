@@ -1,6 +1,6 @@
-# Devowll
+# Ghulabdev
 
-React + Vite + Tailwind CSS website for Devowll.
+React + Vite + Tailwind CSS website for Ghulabdev.
 
 ## Setup
 

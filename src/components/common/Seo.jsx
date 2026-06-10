@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 
-const siteOrigin = import.meta.env.VITE_SITE_URL || 'https://devowll.tech';
-const defaultKeywords = 'Devowll, remote internship, remote internship program, tech internship, online internship';
+const siteOrigin = import.meta.env.VITE_SITE_URL || 'https://ghulabdev.tech';
+const defaultKeywords = 'Ghulabdev, remote internship, remote internship program, tech internship, online internship';
 
 function ensureMeta(selector, attributeName, attributeValue, content) {
   const existing = document.head.querySelector(selector) || document.createElement('meta');
@@ -26,7 +26,7 @@ function ensureCanonical(href) {
 export default function Seo({ title, description, path = '/', keywords = defaultKeywords }) {
   useEffect(() => {
     const normalizedPath = path.startsWith('/') ? path : `/${path}`;
-    const pageTitle = title ? `${title} | Devowll` : 'Devowll';
+    const pageTitle = title ? `${title} | Ghulabdev` : 'Ghulabdev';
     const ogImage = `${siteOrigin}/logo.png`;
     const canonicalUrl = new URL(normalizedPath, siteOrigin).toString();
 

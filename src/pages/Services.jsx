@@ -101,9 +101,9 @@ export default function Services() {
     <>
       <Seo
         title="Remote Internship Services"
-        description="Explore Devowll remote internship services including web development, e-commerce, UI/UX design, digital marketing, React.js advanced, and WordPress development."
+        description="Explore Ghulabdev remote internship services including web development, e-commerce, UI/UX design, digital marketing, React.js advanced, and WordPress development."
         path="/services"
-        keywords="Devowll, remote internship, remote internship services, web development internship, design internship, marketing internship"
+        keywords="Ghulabdev, remote internship, remote internship services, web development internship, design internship, marketing internship"
       />
       <Section className="bg-slate-50">
         <div className="container-page py-20 sm:py-24">
