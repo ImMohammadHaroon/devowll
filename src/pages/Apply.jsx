@@ -290,16 +290,16 @@ export default function Apply() {
     <>
       <Seo
         title="Apply for a Remote Internship"
-        description="Apply for a Devowll remote internship by completing the full application form and choosing your preferred track."
+        description="Apply for a Ghulabdev remote internship by completing the full application form and choosing your preferred track."
         path="/apply"
-        keywords="Devowll, remote internship, apply for remote internship, internship application, online internship"
+        keywords="Ghulabdev, remote internship, apply for remote internship, internship application, online internship"
       />
       <Section className="bg-slate-50">
         <div className="container-page py-20 sm:py-24">
           <p className="text-sm font-semibold uppercase tracking-[0.25em] text-primary">Apply for a Remote Internship</p>
           <h1 className="mt-4 text-4xl font-bold tracking-tight text-dark sm:text-5xl">Apply for a Remote Internship</h1>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-muted">
-            Complete the form and our team will review your application for the right Devowll internship track.
+            Complete the form and our team will review your application for the right Ghulabdev internship track.
           </p>
         </div>
       </Section>
@@ -633,7 +633,7 @@ export default function Apply() {
                         className="mt-1 h-4 w-4 rounded border-slate-300 text-primary focus:ring-primary"
                       />
                       <span className="text-sm leading-6 text-slate-700">
-                        I accept the terms and conditions for applying to Devowll internship programs.
+                        I accept the terms and conditions for applying to Ghulabdev internship programs.
                       </span>
                     </label>
                     {visibleErrors.termsAccepted ? <p className="mt-2 text-sm text-red-600">{visibleErrors.termsAccepted}</p> : null}

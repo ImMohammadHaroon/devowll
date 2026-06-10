@@ -20,7 +20,7 @@ const emailjsConfig = {
 };
 
 const contactCards = [
-  { icon: Mail, label: 'Email', value: 'admin@devowll.tech', color: 'text-primary bg-violet-50' },
+  { icon: Mail, label: 'Email', value: 'admin@ghulabdev.tech', color: 'text-primary bg-violet-50' },
   { icon: MessageCircle, label: 'WhatsApp', value: '+92 XXX XXXXXXX', color: 'text-emerald-600 bg-emerald-50' },
   { icon: Linkedin, label: 'LinkedIn', value: 'linkedin.com/company/113160345', color: 'text-blue-600 bg-blue-50' },
   { icon: MapPin, label: 'Location', value: 'Lahore, Pakistan', color: 'text-red-600 bg-red-50' },
@@ -179,16 +179,16 @@ export default function Contact() {
   return (
     <>
       <Seo
-        title="Contact Devowll"
-        description="Contact Devowll for remote internship questions, partnerships, and general inquiries."
+        title="Contact Ghulabdev"
+        description="Contact Ghulabdev for remote internship questions, partnerships, and general inquiries."
         path="/contact"
-        keywords="Devowll, remote internship, contact Devowll, internship support, partnerships"
+        keywords="Ghulabdev, remote internship, contact Ghulabdev, internship support, partnerships"
       />
       <Section className="bg-slate-50">
         <div className="container-page py-20 sm:py-24">
           <div className="max-w-3xl text-center mx-auto">
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-primary">Contact Us</p>
-            <h1 className="mt-4 text-4xl font-bold tracking-tight text-dark sm:text-5xl">Get in touch with Devowll</h1>
+            <h1 className="mt-4 text-4xl font-bold tracking-tight text-dark sm:text-5xl">Get in touch with Ghulabdev</h1>
             <p className="mt-5 text-lg leading-8 text-muted">We are here to answer questions about internships, programs, and partnerships.</p>
           </div>
         </div>
@@ -312,7 +312,7 @@ export default function Contact() {
         <div className="container-page py-4 sm:py-10">
           <div className="overflow-hidden rounded-[1.75rem] border border-slate-200 shadow-sm">
             <iframe
-              title="Devowll Lahore Map"
+              title="Ghulabdev Lahore Map"
               src="https://www.google.com/maps?q=Lahore,%20Pakistan&output=embed"
               className="h-[350px] w-full border-0"
               loading="lazy"

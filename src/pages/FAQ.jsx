@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     question: 'Will I receive a certificate?',
-    answer: 'Yes. An official Devowll certificate is issued upon successful task completion.',
+    answer: 'Yes. An official Ghulabdev certificate is issued upon successful task completion.',
   },
   {
     question: 'Can I list this on LinkedIn?',
@@ -42,7 +42,7 @@ const faqs = [
   },
   {
     question: 'How do I verify a certificate?',
-    answer: 'Visit devowll.tech/verify-certificate and enter your unique certificate ID.',
+    answer: 'Visit ghulabdev.tech/verify-certificate and enter your unique certificate ID.',
   },
   {
     question: 'Can I apply for multiple tracks?',
@@ -79,9 +79,9 @@ export default function FAQ() {
     <>
       <Seo
         title="Remote Internship FAQ"
-        description="Find answers to common questions about Devowll remote internship programs, certificates, schedules, and verification."
+        description="Find answers to common questions about Ghulabdev remote internship programs, certificates, schedules, and verification."
         path="/faq"
-        keywords="Devowll, remote internship, internship FAQ, certificate verification, remote internship questions"
+        keywords="Ghulabdev, remote internship, internship FAQ, certificate verification, remote internship questions"
       />
       <Section className="bg-slate-50">
         <div className="container-page py-20 sm:py-24">

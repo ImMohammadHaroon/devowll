@@ -12,7 +12,7 @@ export default function Hero() {
             Learn. Build. Launch. with a path made for modern tech careers.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-muted">
-            Devowll helps learners move from fundamentals to portfolio-ready work through guided learning, real projects, and internship opportunities.
+            Ghulabdev helps learners move from fundamentals to portfolio-ready work through guided learning, real projects, and internship opportunities.
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <Button to="/apply">Start Your Application <ArrowRight className="ml-2" size={16} /></Button>

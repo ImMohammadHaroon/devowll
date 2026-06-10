@@ -26,7 +26,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white shadow-sm">
       <div className="container-page flex h-20 items-center justify-between">
         <NavLink to="/" className="font-heading text-2xl font-bold tracking-tight text-primary">
-          Devowll
+          Ghulabdev
         </NavLink>
 
         <nav className="hidden items-center gap-8 lg:flex">
@@ -72,7 +72,7 @@ export default function Navbar() {
         >
           <div className="flex items-center justify-between border-b border-slate-200 px-6 py-5">
             <NavLink to="/" onClick={() => setIsOpen(false)} className="font-heading text-2xl font-bold tracking-tight text-primary">
-              Devowll
+              Ghulabdev
             </NavLink>
             <button
               type="button"

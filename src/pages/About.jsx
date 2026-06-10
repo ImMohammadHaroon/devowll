@@ -82,16 +82,16 @@ export default function About() {
   return (
     <>
       <Seo
-        title="About Devowll"
-        description="Learn about Devowll's mission, vision, core values, and the team building remote internship programs."
+        title="About Ghulabdev"
+        description="Learn about Ghulabdev's mission, vision, core values, and the team building remote internship programs."
         path="/about"
-        keywords="Devowll, remote internship, about Devowll, internship platform, tech training"
+        keywords="Ghulabdev, remote internship, about Ghulabdev, internship platform, tech training"
       />
       <Section className="bg-slate-50">
         <div className="container-page py-20 sm:py-24">
           <div className="max-w-3xl">
             <Badge className="bg-violet-100 text-primary">Our Story</Badge>
-            <h1 className="mt-5 text-4xl font-bold tracking-tight text-dark sm:text-5xl">About Devowll</h1>
+            <h1 className="mt-5 text-4xl font-bold tracking-tight text-dark sm:text-5xl">About Ghulabdev</h1>
             <p className="mt-5 text-lg leading-8 text-muted">We are building the next generation of tech professionals.</p>
           </div>
         </div>
@@ -105,7 +105,7 @@ export default function About() {
               <h2 className="mt-3 text-3xl font-bold text-dark sm:text-4xl">Bridging education and industry with a practical path forward.</h2>
               <div className="mt-6 space-y-5 text-base leading-8 text-muted">
                 <p>
-                  Devowll started with a simple idea: learners should not have to choose between learning theory and getting real experience.
+                  Ghulabdev started with a simple idea: learners should not have to choose between learning theory and getting real experience.
                   We build programs that connect both, so students can work on meaningful projects while developing career-ready confidence.
                 </p>
                 <p>
@@ -171,7 +171,7 @@ export default function About() {
         <div className="container-page py-20 sm:py-24">
           <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-primary">Core Values</p>
-            <h2 className="mt-3 text-3xl font-bold text-dark sm:text-4xl">The principles that shape how Devowll works.</h2>
+            <h2 className="mt-3 text-3xl font-bold text-dark sm:text-4xl">The principles that shape how Ghulabdev works.</h2>
           </div>
 
           <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
@@ -195,7 +195,7 @@ export default function About() {
         <div className="container-page py-20 sm:py-24">
           <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-primary">Meet the Team</p>
-            <h2 className="mt-3 text-3xl font-bold text-dark sm:text-4xl">The people leading Devowll forward.</h2>
+            <h2 className="mt-3 text-3xl font-bold text-dark sm:text-4xl">The people leading Ghulabdev forward.</h2>
           </div>
 
           <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
