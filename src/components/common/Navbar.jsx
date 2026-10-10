@@ -1,116 +1,86 @@
 import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { NavLink } from 'react-router-dom';
-
-const links = [
-  { label: 'Home', to: '/' },
-  { label: 'About', to: '/about' },
-  { label: 'Services', to: '/services' },
-  { label: 'Internships', to: '/internships' },
-  { label: 'Blog', to: '/blog' },
-  { label: 'Contact', to: '/contact' },
-];
+import { Link, useLocation } from 'react-router-dom';
+import { nav, site } from '../../data/site';
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
-    document.body.style.overflow = isOpen ? 'hidden' : '';
+    const onScroll = () => setScrolled(window.scrollY > 12);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
+  useEffect(() => {
+    setOpen(false);
+  }, [location.pathname, location.hash]);
+
+  useEffect(() => {
+    document.body.style.overflow = open ? 'hidden' : '';
+    const onKey = (event) => {
+      if (event.key === 'Escape') setOpen(false);
+    };
+    window.addEventListener('keydown', onKey);
     return () => {
       document.body.style.overflow = '';
+      window.removeEventListener('keydown', onKey);
     };
-  }, [isOpen]);
+  }, [open]);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white shadow-sm">
-      <div className="container-page flex h-20 items-center justify-between">
-        <NavLink to="/" className="font-heading text-2xl font-bold tracking-tight text-primary">
-          Ghulabdev
-        </NavLink>
+    <header
+      className={`fixed inset-x-0 top-0 z-50 transition duration-300 ${
+        scrolled || open ? 'border-b border-white/10 bg-ink/80 backdrop-blur-xl' : 'bg-transparent'
+      }`}
+    >
+      <a href="#content" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-cream focus:px-4 focus:py-2 focus:text-ink">
+        Skip to content
+      </a>
+      <div className="container-page flex h-[4.5rem] items-center justify-between">
+        <Link to="/" className="text-lg font-medium tracking-[-0.04em]" aria-label={`${site.name} home`}>
+          {site.mark}
+        </Link>
 
-        <nav className="hidden items-center gap-8 lg:flex">
-          {links.map((link) => (
-            <NavLink
-              key={link.to}
-              to={link.to}
-              className={({ isActive }) =>
-                `text-sm font-medium transition-colors ${isActive ? 'text-primary' : 'text-slate-700 hover:text-primary'}`
-              }
-            >
-              {link.label}
-            </NavLink>
+        <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary">
+          {nav.map((item) => (
+            <Link key={item.label} to={item.to} className="text-sm text-white/70 transition hover:text-cream">
+              {item.label}
+            </Link>
           ))}
-          <NavLink
-            to="/apply"
-            className="inline-flex items-center justify-center rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-violet-700 focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2"
-          >
-            Apply Now
-          </NavLink>
+          <Link to="/contact" className="pill">
+            Start a build
+          </Link>
         </nav>
 
         <button
           type="button"
-          className="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-slate-200 text-slate-900 lg:hidden"
-          onClick={() => setIsOpen((open) => !open)}
-          aria-label="Toggle navigation menu"
-          aria-expanded={isOpen}
+          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/15 lg:hidden"
+          aria-expanded={open}
+          aria-label={open ? 'Close menu' : 'Open menu'}
+          onClick={() => setOpen((value) => !value)}
         >
-          {isOpen ? <X size={20} /> : <Menu size={20} />}
+          {open ? <X size={18} /> : <Menu size={18} />}
         </button>
       </div>
 
-      <div className={`fixed inset-0 z-50 lg:hidden ${isOpen ? 'pointer-events-auto' : 'pointer-events-none'}`}>
-        <div
-          className={`absolute inset-0 bg-slate-900/40 transition-opacity duration-300 ${isOpen ? 'opacity-100' : 'opacity-0'}`}
-          onClick={() => setIsOpen(false)}
-        />
-        <aside
-          className={`absolute right-0 top-0 h-full w-full bg-white shadow-2xl transition-transform duration-300 ease-out ${
-            isOpen ? 'translate-x-0' : 'translate-x-full'
-          }`}
-        >
-          <div className="flex items-center justify-between border-b border-slate-200 px-6 py-5">
-            <NavLink to="/" onClick={() => setIsOpen(false)} className="font-heading text-2xl font-bold tracking-tight text-primary">
-              Ghulabdev
-            </NavLink>
-            <button
-              type="button"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 text-slate-900"
-              onClick={() => setIsOpen(false)}
-              aria-label="Close navigation menu"
-            >
-              <X size={20} />
-            </button>
-          </div>
-
-          <nav className="flex flex-col gap-2 px-6 py-6">
-            {links.map((link) => (
-              <NavLink
-                key={link.to}
-                to={link.to}
-                onClick={() => setIsOpen(false)}
-                className={({ isActive }) =>
-                  `rounded-xl px-4 py-3 text-base font-medium transition-colors ${
-                    isActive
-                      ? 'bg-violet-50 text-primary'
-                      : 'text-slate-700 hover:bg-slate-50 hover:text-primary'
-                  }`
-                }
-              >
-                {link.label}
-              </NavLink>
+      {open ? (
+        <div className="border-t border-white/10 bg-ink lg:hidden">
+          <nav className="container-page flex flex-col gap-2 py-6" aria-label="Mobile">
+            {nav.map((item) => (
+              <Link key={item.label} to={item.to} className="py-3 text-2xl tracking-[-0.04em]">
+                {item.label}
+              </Link>
             ))}
-            <NavLink
-              to="/apply"
-              onClick={() => setIsOpen(false)}
-              className="mt-4 inline-flex items-center justify-center rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-violet-700"
-            >
-              Apply Now
-            </NavLink>
+            <Link to="/contact" className="pill mt-4 w-fit">
+              Start a build
+            </Link>
           </nav>
-        </aside>
-      </div>
+        </div>
+      ) : null}
     </header>
   );
 }

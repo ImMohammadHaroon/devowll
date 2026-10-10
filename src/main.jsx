@@ -1,16 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { ConvexProvider } from 'convex/react';
 import App from './App';
-import convex from './lib/convex';
 import './styles/globals.css';
-
-document.documentElement.classList.add('dark');
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ConvexProvider client={convex}>
-      <App />
-    </ConvexProvider>
+    <App />
   </React.StrictMode>,
 );
