@@ -1,24 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
+  content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
     extend: {
       colors: {
-        primary: '#7C3AED',
-        dark: '#0F172A',
-        muted: '#6B7280',
+        ink: '#050505',
+        cream: '#f4f4f1',
+        mist: '#c6c6bf',
+        lime: '#d6ff4a',
+        panel: '#111111',
       },
       fontFamily: {
-        heading: ['"Space Grotesk"', 'sans-serif'],
-        body: ['Inter', 'sans-serif'],
+        sans: ['"Inter Tight"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        serif: ['"Instrument Serif"', 'Georgia', 'serif'],
+        mono: ['"IBM Plex Mono"', 'ui-monospace', 'monospace'],
       },
-      boxShadow: {
-        glow: '0 18px 50px rgba(124, 58, 237, 0.18)',
-      },
-      backgroundImage: {
-        'hero-grid':
-          'radial-gradient(circle at top left, rgba(124,58,237,0.16), transparent 35%), radial-gradient(circle at top right, rgba(14,165,233,0.14), transparent 28%), linear-gradient(180deg, #f8fafc 0%, #ffffff 60%, #f8fafc 100%)',
-        'gradient-conic': 'conic-gradient(var(--conic-position), var(--tw-gradient-stops))',
+      maxWidth: {
+        page: '1400px',
       },
     },
   },
