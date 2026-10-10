@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ghulabdev.tech/sitemap.xml
-
+Sitemap: https://devowll.com/sitemap.xml
